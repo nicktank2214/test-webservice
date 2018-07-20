@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.beacon.microservice.web.UserControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.432 s <<< FAILURE! - in com.beacon.microservice.web.UserControllerTest
+initializationError(com.beacon.microservice.web.UserControllerTest)  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.Exception: No runnable methods
+

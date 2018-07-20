@@ -1,0 +1,16 @@
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\repository\AddressgrpRepository.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\domain\AddressCreditPk.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\repository\UserRepository.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\repository\AddressRepository.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\MicroserviceApplication.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\domain\User.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\web\UserDto.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\domain\Addressgrp.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\service\AddressService.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\web\UserController.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\domain\AddressCredit.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\repository\AddressCreditRepository.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\service\AddressgrpService.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\domain\Address.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\web\CreditDto.java
+C:\BEACON\microservice\src\main\java\com\beacon\microservice\web\AddressCreditController.java
