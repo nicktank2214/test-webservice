@@ -71,30 +71,70 @@ COMMIT;
 
 
 # Run the Spring Boot
-The application can be started by running the the following JAR from the [java_home]/bin/java directory -
-  testwebservice-0.0.1-SNAPSHOT.jar
+Import the applications into Eclipse and run the Spring Boot Application program - 
 
-for example -
-  "C:\Program Files (x86)\Java\jre1.8.0_171\bin\java" -Dserver.port=8080 -jar testwebservice-0.0.1-SNAPSHOT.jar 
+com.nicktank.microservice.MicroserviceApplication.java
+
+The application will use the following parameters to connect to the MySQL database -
+
+spring.datasource.url=jdbc:mysql://localhost:3307/testdb
+spring.datasource.username=
+spring.datasource.password=
+server.port=8080
 
 
 
+# Calling web service requests
 
-* Cloud Native Microservices
-  * Uses best practices for cloud native applications
-  * OAuth2 User Authentication
-  * Netflix OSS / Spring Cloud Netflix
-  * Configuration Server
-  * Service Discovery
-  * Circuit Breakers
-  * API Gateway / Micro-proxy
-* Legacy Edge Gateway
-  * Legacy application integration layer
-  * Adapter for legacy systems to consume microservices
-* Lazy Migration of Legacy Data
-  * Microservice facades integrate domain data from legacy applications
-  * Database records are siphoned away from legacy databases
-  * Datasource routing enables legacy systems to use microservices as the system of record
-* Strangler Event Architecture
-  * Asset capture strategy uses events to guarantee single system of record for resources
-  * Durable mirroring of updates back to legacy system
+* Example Create a package request - 
+
+POST http://localhost:8080//package
+
+with JSON parameters -
+
+{
+    "name": "Package 1",
+    "description": "Package 1",
+    "price": 0
+}
+    
+    
+* Example RETRIEVE a package by id request - 
+
+GET http://localhost:8080//package/1
+
+
+* Example UPDATE a package AND add/remove package products by id request - 
+
+PUT http://localhost:8080//package/1
+
+with JSON parameters -
+
+{
+    "name": "Package 1",
+    "description": "Package 1",
+    "packageProducts": [
+    {
+        "productid": "7dgX6XzU3Wds"
+    },
+    {
+        "productid": "7Hv0hA2nmci7"
+    },
+    {
+        "productid": "8anPsR2jbfNW"
+    }
+    ]
+}
+
+* Example DELETE a package AND add/remove package products by id request - 
+
+DELETE http://localhost:8080//package/1
+
+* Example LIST ALL packages request - 
+
+GET http://localhost:8080//package/list
+
+OR with Paging -
+
+GET http://localhost:8080//package/list?page=0&size=20
+
