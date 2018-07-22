@@ -13,9 +13,6 @@ CREATE DATABASE `testdb`
     CHARACTER SET 'latin1'
     COLLATE 'latin1_swedish_ci';
 USE `testdb`;
-#
-# Structure for the `package` table : 
-#
 CREATE TABLE `package` (
   `id` INTEGER(11) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(200) COLLATE latin1_swedish_ci DEFAULT NULL,
@@ -27,9 +24,6 @@ CREATE TABLE `package` (
 AUTO_INCREMENT=22 AVG_ROW_LENGTH=5461 CHARACTER SET 'latin1' COLLATE 'latin1_swedish_ci'
 COMMENT=''
 ;
-#
-# Structure for the `package_product` table : 
-#
 CREATE TABLE `package_product` (
   `id` INTEGER(11) NOT NULL AUTO_INCREMENT,
   `package_id` INTEGER(11) DEFAULT NULL,
@@ -40,9 +34,6 @@ CREATE TABLE `package_product` (
 AUTO_INCREMENT=90 AVG_ROW_LENGTH=3276 CHARACTER SET 'latin1' COLLATE 'latin1_swedish_ci'
 COMMENT=''
 ;
-#
-# Structure for the `product` table : 
-#
 CREATE TABLE `product` (
   `id` VARCHAR(20) COLLATE latin1_swedish_ci NOT NULL,
   `name` VARCHAR(200) COLLATE latin1_swedish_ci DEFAULT NULL,
@@ -53,9 +44,6 @@ CREATE TABLE `product` (
 AVG_ROW_LENGTH=1638 CHARACTER SET 'latin1' COLLATE 'latin1_swedish_ci'
 COMMENT=''
 ;
-#
-# Data for the `product` table  (LIMIT -489,500)
-#
 INSERT INTO `product` (`id`, `name`, `usdprice`) VALUES
   ('500R5EHvNlNB','Gold Coin',249.00),
   ('7dgX6XzU3Wds','Sword',899.00),
