@@ -70,9 +70,13 @@ com.nicktank.microservice.MicroserviceApplication.java
 The application will use the following parameters to connect to the MySQL database -
 
 spring.datasource.url=jdbc:mysql://localhost:3307/testdb
+
 spring.datasource.username=
+
 spring.datasource.password=
+
 server.port=8080
+
 
 
 
