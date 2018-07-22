@@ -76,11 +76,12 @@ server.port=8080
 
 
 
+
 # Calling web service requests
 
-* Example Create a package request - 
+* Example of CREATE a package request - 
 
-POST http://localhost:8080//package
+POST http://localhost:8080/package
 
 with JSON parameters -
 
@@ -91,14 +92,18 @@ with JSON parameters -
 }
     
     
-* Example RETRIEVE a package by id request - 
+* Example of RETRIEVE a package by id request - 
 
-GET http://localhost:8080//package/1
+GET http://localhost:8080/package/1
+
+* Example of RETRIEVE a package for a currency by id request - 
+
+GET http://localhost:8080/package/1/GBP
 
 
-* Example UPDATE a package AND add/remove package products by id request - 
+* Example of UPDATE a package AND add/remove package products by id request - 
 
-PUT http://localhost:8080//package/1
+PUT http://localhost:8080/package/1
 
 with JSON parameters -
 
@@ -118,15 +123,15 @@ with JSON parameters -
     ]
 }
 
-* Example DELETE a package AND add/remove package products by id request - 
+* Example of DELETE a package AND add/remove package products by id request - 
 
-DELETE http://localhost:8080//package/1
+DELETE http://localhost:8080/package/1
 
-* Example LIST ALL packages request - 
+* Example of LIST ALL packages request - 
 
-GET http://localhost:8080//package/list
+GET http://localhost:8080/package/list
 
 OR with Paging -
 
-GET http://localhost:8080//package/list?page=0&size=20
+GET http://localhost:8080/package/list?page=0&size=20
 
